@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ShopEase | Online Shopping</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">ShopEase</div>
+    <ul class="nav-links">
+      <li><a href="#" id="home-link">Home</a></li>
+      <li><a href="#products" id="products-link">Products</a></li>
+      <li><a href="#categories" id="categories-link">Categories</a></li>
+      <li><a href="#deals" id="deals-link">Deals</a></li>
+    </ul>
+    <div class="nav-buttons">
+      <button id="search-btn"><i class="fas fa-search"></i> Search</button>
+      <button id="cart-btn"><i class="fas fa-shopping-cart"></i> Cart <span id="cart-count">0</span></button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Shop the Latest Trends</h1>
+      <p>
+        Discover amazing products at unbeatable prices. From fashion to electronics, we have everything you need.
+        Shop now and enjoy fast shipping, easy returns, and exceptional customer service.
+      </p>
+      <div class="hero-buttons">
+        <button id="shop-now-btn">Shop Now</button>
+        <button id="special-offers-btn">Special Offers</button>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?q=80&w=2070&auto=format&fit=crop" alt="Shopping Banner" />
+    </div>
+  </section>
+
+  <!-- Categories Section -->
+  <section class="categories-section" id="categories">
+    <h2>Shop by Category</h2>
+    <div class="categories">
+      <div class="category" id="category-electronics">
+        <img src="https://images.unsplash.com/photo-1498049794561-7780e7231661?q=80&w=2070&auto=format&fit=crop" alt="Electronics" />
+        <h3>Electronics</h3>
+      </div>
+      <div class="category" id="category-fashion">
+        <img src="https://images.unsplash.com/photo-1445205170230-053b83016050?q=80&w=2071&auto=format&fit=crop" alt="Fashion" />
+        <h3>Fashion</h3>
+      </div>
+      <div class="category" id="category-home">
+        <img src="https://images.unsplash.com/photo-1484101403633-562f891dc89a?q=80&w=2074&auto=format&fit=crop" alt="Home & Living" />
+        <h3>Home & Living</h3>
+      </div>
+      <div class="category" id="category-beauty">
+        <img src="https://images.unsplash.com/photo-1571781926291-c477ebfd024b?q=80&w=2076&auto=format&fit=crop" alt="Beauty" />
+        <h3>Beauty</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Products Section -->
+  <section class="products-section" id="products">
+    <h2>Featured Products</h2>
+    <div class="product-filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="electronics">Electronics</button>
+      <button class="filter-btn" data-filter="fashion">Fashion</button>
+      <button class="filter-btn" data-filter="home">Home</button>
+      <button class="filter-btn" data-filter="beauty">Beauty</button>
+    </div>
+    <div class="products">
+      <!-- Product 1 -->
+      <div class="product" data-category="electronics">
+        <div class="product-image">
+          <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?q=80&w=2064&auto=format&fit=crop" alt="Smart Watch" />
+          <span class="discount-badge">-20%</span>
+        </div>
+        <h3>Smart Watch Pro</h3>
+        <div class="product-rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+          <span>(45)</span>
+        </div>
+        <div class="product-price">
+          <span class="original-price">$199.99</span>
+          <span class="current-price">$159.99</span>
+        </div>
+        <button class="add-to-cart-btn" data-id="1" data-name="Smart Watch Pro" data-price="159.99" data-image="https://images.unsplash.com/photo-1546868871-7041f2a55e12?q=80&w=2064&auto=format&fit=crop">Add to Cart</button>
+      </div>
+      
+      <!-- Product 2 -->
+      <div class="product" data-category="fashion">
+        <div class="product-image">
+          <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?q=80&w=1936&auto=format&fit=crop" alt="Leather Jacket" />
+          <span class="discount-badge">-15%</span>
+        </div>
+        <h3>Premium Leather Jacket</h3>
+        <div class="product-rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="far fa-star"></i>
+          <span>(32)</span>
+        </div>
+        <div class="product-price">
+          <span class="original-price">$299.99</span>
+          <span class="current-price">$254.99</span>
+        </div>
+        <button class="add-to-cart-btn" data-id="2" data-name="Premium Leather Jacket" data-price="254.99" data-image="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?q=80&w=1936&auto=format&fit=crop">Add to Cart</button>
+      </div>
+      
+      <!-- Product 3 -->
+      <div class="product" data-category="home">
+        <div class="product-image">
+          <img src="https://images.unsplash.com/photo-1507764923504-cd90bf7da772?q=80&w=1974&auto=format&fit=crop" alt="Smart Speaker" />
+          <span class="new-badge">NEW</span>
+        </div>
+        <h3>Smart Home Speaker</h3>
+        <div class="product-rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <span>(78)</span>
+        </div>
+        <div class="product-price">
+          <span class="current-price">$129.99</span>
+        </div>
+        <button class="add-to-cart-btn" data-id="3" data-name="Smart Home Speaker" data-price="129.99" data-image="https://images.unsplash.com/photo-1507764923504-cd90bf7da772?q=80&w=1974&auto=format&fit=crop">Add to Cart</button>
+      </div>
+      
+      <!-- Product 4 -->
+      <div class="product" data-category="beauty">
+        <div class="product-image">
+          <img src="https://images.unsplash.com/photo-1571781926291-c477ebfd024b?q=80&w=2076&auto=format&fit=crop" alt="Skincare Set" />
+          <span class="discount-badge">-25%</span>
+        </div>
+        <h3>Premium Skincare Set</h3>
+        <div class="product-rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+          <i class="far fa-star"></i>
+          <span>(56)</span>
+        </div>
+        <div class="product-price">
+          <span class="original-price">$89.99</span>
+          <span class="current-price">$67.49</span>
+        </div>
+        <button class="add-to-cart-btn" data-id="4" data-name="Premium Skincare Set" data-price="67.49" data-image="https://images.unsplash.com/photo-1571781926291-c477ebfd024b?q=80&w=2076&auto=format&fit=crop">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Deals Section -->
+  <section class="deals-section" id="deals">
+    <div class="deals-content">
+      <p class="tag">Limited Time</p>
+      <h2>Special Deals Just For You</h2>
+      <p>
+        Don't miss out on our exclusive offers! Shop now and save big on premium products.
+        Limited stock available, so hurry before they're gone.
+      </p>
+      <button class="explore-btn" id="view-all-deals-btn">View All Deals</button>
+    </div>
+    <div class="deals-image">
+      <img src="https://images.unsplash.com/photo-1607083206968-13611e3d76db?q=80&w=2115&auto=format&fit=crop" alt="Special Deals" />
+    </div>
+  </section>
+
+  <!-- Shopping Cart Modal -->
+  <div class="cart-modal" id="cart-modal">
+    <div class="cart-content">
+      <div class="cart-header">
+        <h2>Your Shopping Cart</h2>
+        <button id="close-cart-btn"><i class="fas fa-times"></i></button>
+      </div>
+      <div class="cart-items" id="cart-items">
+        <!-- Cart items will be added here dynamically -->
+      </div>
+      <div class="cart-summary">
+        <div class="cart-total">
+          <span>Total:</span>
+          <span id="cart-total-price">$0.00</span>
+        </div>
+        <button id="checkout-btn">Proceed to Checkout</button>
+        <button id="clear-cart-btn">Clear Cart</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <!-- Top part -->
+    <div class="footer-top">
+      <h2>Join Our Community Today</h2>
+      <p>Get exclusive deals, free shipping offers, and more when you sign up for our newsletter!</p>
+      <div class="footer-buttons">
+        <button id="contact-btn">Contact Us</button>
+        <button id="about-btn">About Us</button>
+      </div>
+    </div>
+
+    <!-- Bottom part -->
+    <div class="footer-bottom">
+      <div class="footer-grid">
+        <!-- Logo & Newsletter -->
+        <div class="footer-col">
+          <h3>ShopEase</h3>
+          <p>Subscribe to our newsletter for the latest updates on products and special offers.</p>
+          <form id="newsletter-form">
+            <input type="email" placeholder="Your email here" required />
+            <button type="submit">Subscribe</button>
+          </form>
+          <p class="privacy">By subscribing, you consent to our Privacy Policy and receive updates from us.</p>
+        </div>
+        <!-- Quick Links -->
+        <div class="footer-col">
+          <h4>Shop</h4>
+          <ul>
+            <li><a href="#products">All Products</a></li>
+            <li><a href="#deals">Deals</a></li>
+            <li><a href="#categories">Categories</a></li>
+            <li><a href="#">New Arrivals</a></li>
+            <li><a href="#">Best Sellers</a></li>
+          </ul>
+        </div>
+        <!-- Connect -->
+        <div class="footer-col">
+          <h4>Customer Service</h4>
+          <ul>
+            <li><a href="#" id="contact-support-link">Contact Support</a></li>
+            <li><a href="#" id="shipping-link">Shipping Info</a></li>
+            <li><a href="#" id="returns-link">Returns & Exchanges</a></li>
+            <li><a href="#" id="faq-link">FAQs</a></li>
+            <li><a href="#" id="track-order-link">Track Your Order</a></li>
+          </ul>
+        </div>
+        <!-- Social -->
+        <div class="footer-col">
+          <h4>Follow Us</h4>
+          <ul>
+            <li><a href="#" id="facebook-link"><i class="fab fa-facebook"></i> Facebook</a></li>
+            <li><a href="#" id="instagram-link"><i class="fab fa-instagram"></i> Instagram</a></li>
+            <li><a href="#" id="twitter-link"><i class="fab fa-twitter"></i> Twitter</a></li>
+            <li><a href="#" id="pinterest-link"><i class="fab fa-pinterest"></i> Pinterest</a></li>
+            <li><a href="#" id="youtube-link"><i class="fab fa-youtube"></i> YouTube</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="javas.js"></script>
+</body>
+</html>
